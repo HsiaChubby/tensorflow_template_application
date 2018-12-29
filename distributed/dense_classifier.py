@@ -51,7 +51,7 @@ def read_and_decode(filename_queue):
     features = tf.parse_single_example(
         serialized_example,
         features={
-            "label": tf.FixedLenFeature([], tf.float32),
+            "label": tf.FixedLenFeature([], tf.int64),
             "features": tf.FixedLenFeature([FEATURE_SIZE], tf.float32),
         })
 
