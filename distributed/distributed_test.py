@@ -28,7 +28,7 @@ def main(_):
         cluster=cluster)):
 
       # Build model...
-      loss = tf.nn.l2_loss
+      loss = ...
       global_step = tf.contrib.framework.get_or_create_global_step()
 
       train_op = tf.train.AdagradOptimizer(0.01).minimize(
